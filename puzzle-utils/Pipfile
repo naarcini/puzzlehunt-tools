@@ -5,11 +5,11 @@ name = "pypi"
 
 [packages]
 pytest = "*"
-pyreadline = "*"
+prompt_toolkit = "*"
 requests = "*"
 "bs4" = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.13"

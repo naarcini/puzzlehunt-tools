@@ -8,34 +8,29 @@ from words.dropquote import dropquote, dropquote_apply_word
 from encoders.semaphore import semaphore, semaphore_multi
 from encoders.caesar import caesar, caesar_brute, caesar_independent
 
-# Sets up tab completion
-import rlcompleter, readline
-if readline.__doc__ is not None and 'libedit' in readline.__doc__:
-    readline.parse_and_bind("bind ^I rl_complete")
-else:
-    readline.parse_and_bind("tab: complete")
+# TODO: Set up tab completion with prompt_toolkit
 
 # Recommend to use this interactively by running
 # >pipenv run python -i puzzle-utils.py
 
 def main():
-	"""
-		Examples:
-		>>> set_current_dictionary(GOOGLE_10000_ENGLISH_USA)
-		>>> anagram("qi??")
-		['ipaq', 'iraq', 'quit', 'quiz']
-		>>> set_current_dictionary(PETER_NORVIG_IN_COLLINS)
-		>>> anagram("qi??")
-		['qadi', 'quai', 'cinq', 'quid', 'fiqh', 'quim', 'quin', 'quip', 'quit', 'quiz']
-		>>> set_current_dictionary(COLLINS_SCRABBLE_WORDS_2015)
-		>>> anagram("qi??")
-		['qaid', 'qadi', 'quai', 'cinq', 'quid', 'fiqh', 'quim', 'qins', 'quin', 'quip', 'quit', 'quiz']
-		>>> search("^t.st$")
-		['test', 'tost']
-		>>> anagram_multi("irobot")
-		...
-	"""
-	return
+  """
+    Examples:
+    >>> set_current_dictionary(GOOGLE_10000_ENGLISH_USA)
+    >>> anagram("qi??")
+    ['ipaq', 'iraq', 'quit', 'quiz']
+    >>> set_current_dictionary(PETER_NORVIG_IN_COLLINS)
+    >>> anagram("qi??")
+    ['qadi', 'quai', 'cinq', 'quid', 'fiqh', 'quim', 'quin', 'quip', 'quit', 'quiz']
+    >>> set_current_dictionary(COLLINS_SCRABBLE_WORDS_2015)
+    >>> anagram("qi??")
+    ['qaid', 'qadi', 'quai', 'cinq', 'quid', 'fiqh', 'quim', 'qins', 'quin', 'quip', 'quit', 'quiz']
+    >>> search("^t.st$")
+    ['test', 'tost']
+    >>> anagram_multi("irobot")
+    ...
+  """
+  return
 
 if __name__ == '__main__':
-	main()
+  main()
